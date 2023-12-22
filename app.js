@@ -1,7 +1,6 @@
 const rateLimit = require("express-rate-limit"); // wa want it to be a global md that's why we put it here in app.js .
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
-const xssClean = require("xss-clean");
 const cors = require("cors");
 
 const express = require("express");
@@ -32,7 +31,6 @@ const limiter = rateLimit({
 
 app.use("/", limiter); // to affect all of the routes that starts with /api .
 
-app.use(xssClean()); // clean the user input from any malicious html code .
 
 app.use(cors()); // is going to return a md to set different headers to our response.
 // which allow other requests no matter where they came from to access the whole api resources.
