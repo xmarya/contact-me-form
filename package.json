@@ -1,0 +1,41 @@
+{
+  "name": "email-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "module": "./public/index.js",
+  "targets": {
+    "main": false,
+    "default": {
+      "distDir": "./public/javascript/bundle"
+    }
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "parcel ./public/html/index.html",
+    "css:minify": "cleancss -o ./public/css/minified/styles.min.css ./public/css/styles.css",
+    "build": "parcel build ./public/javascript/index.js"
+  },
+  "author": "Marya",
+  "license": "ISC",
+  "dependencies": {
+    "clean-css-cli": "^5.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.1.5",
+    "googleapis": "^129.0.0",
+    "helmet": "^7.1.0",
+    "html-to-text": "^9.0.5",
+    "motion": "^10.16.4",
+    "nodemailer": "^6.9.7",
+    "pug": "^3.0.2",
+    "split-type": "^0.3.4",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "parcel": "^2.10.3"
+  }
+}
