@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "start:parcel": "parcel ./public/html/index.html",
+    "parcel": "parcel ./public/html/index.html",
     "css:minify": "cleancss -o ./public/css/minified/styles.min.css ./public/css/styles.css",
     "build": "parcel build ./public/javascript/index.js"
   },
