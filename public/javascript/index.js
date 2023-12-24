@@ -3,11 +3,27 @@ import { validateEmail, validateForm } from "./validateForm.js";
 import { alert } from "./showAlerts.js";
 import { startAnimation } from "./contentAnimation.js";
 
+const offsetCalculation = () => {
+  const heading = document.querySelector(".main-heading");
+  const ctaContainer = document.querySelector(".header--cta-container");
 
+  const headingHeight = heading.offsetHeight;
+  const headingWidth = heading.offsetWidth;
+  console.log(headingWidth);
 
-document.addEventListener("DOMContentLoaded", event => {
+  ctaContainer.style.top = `${headingHeight * 0.95}px`;
+  // ctaContainer.style.right = `${-(headingWidth * 0.25)}px`;
+  
+}
+
+["DOMContentLoaded", "resize", "load"].forEach(event => {
+  window.addEventListener(event, () => {
+    offsetCalculation();
+  });
+});
+
+window.addEventListener("DOMContentLoaded", event => {
   event.preventDefault();
-
   startAnimation();
 });
 

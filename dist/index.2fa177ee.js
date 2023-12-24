@@ -579,7 +579,25 @@ var _emailSendJs = require("./emailSend.js");
 var _validateFormJs = require("./validateForm.js");
 var _showAlertsJs = require("./showAlerts.js");
 var _contentAnimationJs = require("./contentAnimation.js");
-document.addEventListener("DOMContentLoaded", (event)=>{
+const offsetCalculation = ()=>{
+    const heading = document.querySelector(".main-heading");
+    const ctaContainer = document.querySelector(".header--cta-container");
+    const headingHeight = heading.offsetHeight;
+    const headingWidth = heading.offsetWidth;
+    console.log(headingWidth);
+    ctaContainer.style.top = `${headingHeight * 0.95}px`;
+// ctaContainer.style.right = `${-(headingWidth * 0.25)}px`;
+};
+[
+    "DOMContentLoaded",
+    "resize",
+    "load"
+].forEach((event)=>{
+    window.addEventListener(event, ()=>{
+        offsetCalculation();
+    });
+});
+window.addEventListener("DOMContentLoaded", (event)=>{
     event.preventDefault();
     (0, _contentAnimationJs.startAnimation)();
 });
@@ -760,6 +778,8 @@ const headingsub = new (0, _splitTypeDefault.default)("#sub-heading", {
 const headingMain = new (0, _splitTypeDefault.default)("#main-heading", {
     types: "words"
 });
+const mq = window.matchMedia("(max-height: 58.25em)");
+const ySpaceAmount = mq.matches ? 500 : 60;
 const headingAnimation = [
     ...headingsub.lines,
     ...headingMain.words
@@ -823,7 +843,7 @@ const startAnimation = ()=>{
     (0, _motion.inView)(".section", (sections)=>{
         (0, _motion.animate)(sections.target, {
             y: [
-                60,
+                ySpaceAmount,
                 0
             ],
             opacity: [

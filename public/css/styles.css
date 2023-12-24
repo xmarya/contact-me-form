@@ -177,9 +177,7 @@ section {
 
 .header--cta-container {
   position: absolute;
-  top: 25%;
   right: 32%;
-  /* right: 22%; */
   width: 20rem;
   height: 20rem;
 
@@ -439,7 +437,6 @@ section {
 @media screen and (max-width: 77.5em) {
   /* 1240 / 16*/
   .header--cta-container {
-    top:29%;
     right: 30%;
   }
 }
@@ -679,7 +676,6 @@ section {
 @media screen and (max-width: 56.75em) {
   /* 908 / 16*/
   .header--cta-container {
-    top: 26%;
     right: 16%;
   }
 
@@ -750,7 +746,6 @@ section {
   }
 
   .header--cta-container {
-    top: 24%;
     right: 14%;
   }
 }
@@ -792,7 +787,6 @@ section {
   }
 
   .header--cta-container {
-    top: 22%;
     right: 12%;
   }
 }
@@ -847,7 +841,6 @@ section {
 @media screen and (max-width: 43em) {
   /*688 / 16*/
   .header--cta-container {
-    top: 22%;
     right: 10.5%;
   }
 
@@ -899,7 +892,6 @@ section {
 @media screen and (max-width: 40.48em) {
   /*655 / 16*/
   .header--cta-container {
-    top: 20%;
     right: 12%;
   }
 
@@ -943,7 +935,6 @@ section {
   }
 
   .header--cta-container {
-    top: 76%;
     right: 26%;
   }
 
@@ -977,10 +968,6 @@ section {
   }
   .main-heading {
     font-size: 5.6rem;
-  }
-
-  .header--cta-container {
-    top: 69%;
   }
 
   .section-container {
@@ -1018,9 +1005,6 @@ section {
     font-size: 5.3rem;
   }
 
-  .header--cta-container {
-    top: 66%;
-  }
 
   .form-section {
     max-width: 52rem;
@@ -1034,10 +1018,6 @@ section {
   .main-heading {
     font-size: 5rem;
     max-width: 99%;
-  }
-
-  .header--cta-container {
-    top: 63%;
   }
 
   .form-section {
@@ -1067,7 +1047,6 @@ section {
   }
 
   .header--cta-container {
-    top: 60%;
     right: 20%;
   }
 }
@@ -1080,7 +1059,6 @@ section {
   }
 
   .header--cta-container {
-    top: 56%;
     right: 20%;
   }
 
@@ -1113,7 +1091,6 @@ section {
   /*467 / 16*/
 
   .header--cta-container {
-    top: 51%;
     right: 18%;
   }
 
@@ -1168,7 +1145,6 @@ section {
   /*433 / 16*/
 
   .header--cta-container {
-    top: 48%;
     right: 13%;
   }
 
@@ -1188,7 +1164,6 @@ section {
     max-width: 100vw;
   }
   .header--cta-container {
-    top: 49%;
     right: 11%;
   }
 
@@ -1318,7 +1293,6 @@ section {
 @media screen and (max-width: 21.79em) {
   /*347 / 16*/
   .header--cta-container {
-    top: 42%;
     right: 8%;
   }
 
