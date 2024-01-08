@@ -8,8 +8,8 @@ const offsetCalculation = () => {
   const ctaContainer = document.querySelector(".header--cta-container");
 
   const headingHeight = heading.offsetHeight;
-  const headingWidth = heading.offsetWidth;
-  console.log(headingWidth);
+  // const headingWidth = heading.offsetWidth;
+  // console.log(headingWidth);
 
   ctaContainer.style.top = `${headingHeight * 0.95}px`;
   // ctaContainer.style.right = `${-(headingWidth * 0.25)}px`;

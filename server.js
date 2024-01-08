@@ -10,14 +10,14 @@ server.listen(port, () => {
 });
 
 process.on("unhandledRejection", error => {
-  console.log("unhandledRejection",error.name);
+  console.log("unhandledRejection🔶🔶🔶",error.name);
 
   server.close( () => process.exit(1));
   
 });
 
 process.on("uncaughtException", error => {
-  console.log("uncaughtException",error.name);
+  console.log("uncaughtException🔶🔶🔶",error.name);
   server.close( () => process.exit(1));
 });
 
